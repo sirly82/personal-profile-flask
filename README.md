@@ -77,8 +77,8 @@ personal-profile/
 
 ## 🖼️ Preview Tampilan
 
-### ✅ Halaman Home
+### Halaman Home
 <img src="docs/images/home.png" alt="Home Page" width="700"/>
 
-### ✅ Halaman Biodata (Card Layout)
+### Halaman Biodata
 <img src="docs/images/biodata.png" alt="Biodata Page" width="700"/>
