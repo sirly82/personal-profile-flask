@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Biodata - Sirly{% endblock %}
+{% block content %}
+<section class="biodata-card">
+    <div class="biodata-image">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Foto Profil">
+    </div>
+    <div class="biodata-info">
+        <h2>Biodata Diri</h2>
+        <ul class="biodata-list">
+            <li><strong>Nama:</strong> {{ biodata.nama }}</li>
+            <li><strong>Umur:</strong> {{ biodata.umur }} tahun</li>
+            <li><strong>Email:</strong> {{ biodata.email }}</li>
+            <li><strong>Alamat:</strong> {{ biodata.alamat }}</li>
+            <li><strong>Pendidikan:</strong> {{ biodata.pendidikan }}</li>
+            <li><strong>Pekerjaan:</strong> {{ biodata.pekerjaan }}</li>
+            <li><strong>Skill:</strong> {{ biodata.skill | join(', ') }}</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

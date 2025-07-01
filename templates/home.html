@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Home - Sirly{% endblock %}
+{% block content %}
+<section class="home">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile" class="profile-pic">
+    <div class="intro">
+        <h1>Hi, I'm Sirly Ziadatul Mustafidah</h1>
+        <p>I'm a passionate Informatics Engineering student with interests in Web Development, Machine Learning, and UI/UX Design. I love building elegant and user-focused digital experiences.</p>
+        <a href="{{ url_for('biodata') }}" class="btn">View Biodata</a>
+    </div>
+</section>
+{% endblock %}
